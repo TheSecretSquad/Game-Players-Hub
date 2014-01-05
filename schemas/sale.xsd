@@ -1,0 +1,55 @@
+﻿<?xml version="1.0"?>
+<!--
+  ______                   ______  _                             _     _       _                         
+ / _____)                 (_____ \| |                           | |   | |     | |                        
+| /  ___  ____ ____   ____ _____) ) | ____ _   _  ____  ____ ___| |__ | |_   _| | _     ____  ___  ____  
+| | (___)/ _  |    \ / _  )  ____/| |/ _  | | | |/ _  )/ ___)___)  __)| | | | | || \   / ___)/ _ \|    \ 
+| \____/( ( | | | | ( (/ /| |     | ( ( | | |_| ( (/ /| |  |___ | |   | | |_| | |_) )_( (___| |_| | | | |
+ \_____/ \_||_|_|_|_|\____)_|     |_|\_||_|\__  |\____)_|  (___/|_|   |_|\____|____/(_)\____)\___/|_|_|_|
+                                          (____/                                                         
+
+File:   Sale.xsd
+Author: Peter DiSalvo
+Date:   April 2012
+
+Purpose:  Schema for sales of items.
+
+-->
+
+<xs:schema targetNamespace="http://www.gameplayershub.com/sale"
+           elementFormDefault="qualified"
+           xmlns="http://www.gameplayershub.com/sale"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:sha="http://www.gameplayershub.com/sharedTypes">
+
+  <xs:import namespace="http://www.gameplayershub.com/sharedTypes" schemaLocation="sharedTypes.xsd" />
+
+  <xs:element name="salesCatalog" type="salesCatalog" />
+
+  <xs:complexType name="salesCatalog">
+    <xs:sequence>
+      <xs:element name="sale" type="sale" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sale">
+    <xs:group ref="sale" minOccurs="1" maxOccurs="1" />
+    <xs:attributeGroup ref="sale" />
+  </xs:complexType>
+
+  <xs:group name="sale">
+    <xs:sequence>
+      <xs:element name="vendorName" type="xs:string" />
+      <xs:element name="price" type ="sha:price" />
+      <xs:element name="startDate" type="xs:date" minOccurs="0" maxOccurs="1" />
+      <xs:element name="endDate" type="xs:date" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:group>
+
+  <xs:attributeGroup name="sale">
+    <xs:attribute name="saleID" type="xs:ID" use="required" />
+    <xs:attribute name="link" type="sha:webLink" use="required" />
+    <xs:attribute name="forItem" type="xs:IDREF" use="required" />
+  </xs:attributeGroup>
+
+</xs:schema>

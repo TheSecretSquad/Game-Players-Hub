@@ -1,0 +1,745 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ______                   ______  _                             _     _       _                         
+ / _____)                 (_____ \| |                           | |   | |     | |                        
+| /  ___  ____ ____   ____ _____) ) | ____ _   _  ____  ____ ___| |__ | |_   _| | _     ____  ___  ____  
+| | (___)/ _  |    \ / _  )  ____/| |/ _  | | | |/ _  )/ ___)___)  __)| | | | | || \   / ___)/ _ \|    \ 
+| \____/( ( | | | | ( (/ /| |     | ( ( | | |_| ( (/ /| |  |___ | |   | | |_| | |_) )_( (___| |_| | | | |
+ \_____/ \_||_|_|_|_|\____)_|     |_|\_||_|\__  |\____)_|  (___/|_|   |_|\____|____/(_)\____)\___/|_|_|_|
+                                          (____/                                                         
+
+File:   articles.xml
+Author: Peter DiSalvo
+Date:   April 2012
+
+Purpose:  Game news file used to store news and reviews.
+
+-->
+
+<?xml-stylesheet type="text/xsl" href="articles.xslt"?>
+<publicationsExtCatalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:schemaLocation="http://www.gameplayershub.com/gameNews schemas\gameNews.xsd"
+                        xmlns:na="http://www.gameplayershub.com/newsArticle"
+                        xmlns="http://www.gameplayershub.com/gameNews">
+
+  <externalGameCatalogURL>games.xml</externalGameCatalogURL>
+  <review featured="true" id="ar1" forItems="rl4 rl5 rl6" photo="articles/ar1/photo.jpg">
+    <na:title>Taking the FPS to New Heights</na:title>
+    <na:author>Calvin Locke</na:author>
+    <na:date>2012-02-02</na:date>
+    <na:synopsis>
+      <![CDATA[When it comes to virtual battlefields, nobody does it quite like the Battlefield series. It has a long history of creating sprawling conflict zones where players have an exhilarating range of ways to make powerful contributions to the war effort.]]>
+    </na:synopsis>
+    <na:content>
+      <![CDATA[
+      <p>
+        Easily one of the most prominent conversations amongst hardcore and casual gamers
+        alike since the announcement of Battlefield 3 is how well DICE's new modern combat
+        shooter will stack up to the legendary titan known as the Call of Duty: Modern Warfare
+        series. I feel it would be irresponsible on my part to ignore Call of Duty in this
+        review since one of the biggest questions on gamer's minds this Holiday season will
+        be: Battlefield 3 or Call of Duty: Modern Warfare 3? Well, with Call of Duty only
+        weeks away from release it would be impossible for me to completely pinpoint a result.
+        I have played every Call of Duty released on the Xbox 360, Battlefield: Modern Combat,
+        Battlefield: Bad Company, Battlefield: Bad Company 2, and Medal of Honor. So it
+        should go without saying that I have enough experience in modern combat gaming to
+        form a valid opinion. Regardless this is a review of Battlefield 3 and you will
+        have to stay tuned to our review of Call of Duty: Modern Warfare 3 to see exactly
+        how they stack up against each-other; moving on.
+      </p>
+      <img src="articles/ar1/screenshot1.jpg" alt="Screenshot of soldiers firing at a tank"/>
+      <p>
+        On Xbox 360 Battlefield 3 comes packaged with two discs, the second of which includes
+        the single player campaign only. The first disc includes the hyped multiplayer and
+        co-op missions and the high definition texture pack. That's right. If you want to
+        get the most out of the game's graphic settings, you will need to clear 1.5 GB of
+        space on your hard drive to make it happen. If you're playing the game without a
+        hard drive or don't have the space to clear, you will have to opt for the "standard
+        definition" version of the game which is comparable to the quality of games when
+        the 360 launched. Maybe not that bad...but bad enough that I could cut the graphics
+        score in half. The texture pack makes a major difference not only in the textures
+        found on guns, environments, and character models but also in the lighting as well.
+      </p>
+      <p>
+        The lighting I must admit is easily Battlefield 3's strongest suit in visual quality.
+        The vertical rays reflected off many light sources seemed to be more common than
+        I have ever noticed in real life, but for the most part the rays, refractions, beams,
+        and bloom effects are all expertly well done and certainly worth commending. Before
+        even starting the game, it's recommended you not only download the texture pack
+        but also the day one update over Xbox Live which includes about 167 MB worth of
+        patches. The game by no means looks bad. It certainly keeps up with the technology
+        today and while it is still remniscent of Battlefield: Bad Company 2 in some aspects,
+        DICE seemed to up the ante with more photo-realism and less of the almost cartoonish
+        style found in the Bad Company series. If you thought Bad Company 2 looked impressive,
+        then prepare to be most pleased with Battlefield 3. Smoke and particle effects are
+        also quite awe-inspiring, and I have to suggest looking at the clouds during the
+        campaign's jet tutorial (where you act as a co-pilot rather than flying yourself,
+        by the way). The Xbox 360 may not be capable of producing the jaw dropping visuals
+        found on a high end PC, but with the texture pack installed there is little to complain
+        about.
+        
+      </p>
+      <img src="articles/ar1/screenshot2.jpg" alt="Screenshot of soldier outside of a building" />
+      <p>
+        DICE has made vast improvements to their Frostbite engine (now dubbed Frostbite
+        2.0) and I would go as far as to say it is the best destruction tech you will find
+        in a video game. If you aren't impressed by the way the facade of a building crumbles,
+        collapses, and turns to dust after an RPG attack then you're just silly. The engine
+        isn't quite as superb in the campaign as it is in multiplayer, but the latter was
+        the initial reason for its development. If there is anything BF3 can pack a major
+        punch with on its competition, it's the Frostbite 2.0 engine. If the graphics aren't
+        enough for you, the next appraisal has to go to the sound. I was always impressed
+        with the sound effects in Bad Company 2, but BF3 goes the extra mile and produces
+        highly realistic gun fire, bass pounding explosions, and just the right soundtrack
+        to keep you involved in the more action-packed moments of the game. They were able
+        to get some Johnny Cash in there too, so points for that. When you play online,
+        make sure to pay attention to the gun fire coming from your teammates and opponents
+        that are in separate areas. You can't tell me your hair doesn't raise just a little
+        bit when you hear the echo of a shot fired from a hunting sniper or the ricochet
+        of his round as it just misses your skull.
+      </p>]]>
+    </na:content>
+    <scores>
+      <score>
+        <criteria>Graphics</criteria>
+        <value>10</value>
+      </score>
+      <score>
+        <criteria>Controls</criteria>
+        <value>10</value>
+      </score>
+      <score>
+        <criteria>Gameplay</criteria>
+        <value>10</value>
+      </score>
+      <score>
+        <criteria>Multiplayer</criteria>
+        <value>10</value>
+      </score>
+      <score>
+        <criteria>Sound</criteria>
+        <value>10</value>
+      </score>
+      <score>
+        <criteria>Innovation</criteria>
+        <value>10</value>
+      </score>
+      <score>
+        <criteria>SinglePlayer</criteria>
+        <value>6</value>
+      </score>
+    </scores>
+  </review>
+
+  <review id="ar2" forItems="rl1" photo="articles/ar2/photo.jpg">
+    <na:title>Hits Back</na:title>
+    <na:author>Calvin Locke</na:author>
+    <na:date>2010-03-15</na:date>
+    <na:synopsis>
+      <![CDATA[
+      Great graphics, top notch controls...this is real Street Fighter. Incredible quality; one of the best iPod games around.
+      ]]>
+    </na:synopsis>
+    <na:content>
+      <![CDATA[
+      <p>
+        The mobile game marketplace suffers from clutter, and from the player&#8217;s standpoint,
+        low expectations. With most games costing only a few bucks many of us have learned
+        to expect little and are satisfied with something that actually just works. Sure,
+        there have been a few great games that have come along, but I&#8217;ve been hoping
+        for a day when the iPod functions more like a PSP than the ill-fated gaming phone,
+        the <a href="http://netdna.webdesignerdepot.com/uploads/cellphone_design/dkmb86g_616gn8kkk86_b.jpg">
+          Nokia N-Gage
+        </a>. It had so much promise. Too bad you had to talk on it sideways.
+        Look, I am not saying the PSP is a tremendous success cause it surely isn&#8217;t.
+        That hardware, however, is designed to play games and it does so fairly well. Can&#8217;t
+        blame the hardware for poor software.
+      </p>
+      <img src="articles/ar2/screenshot1.jpg" alt="Screenshot of characters fighting" />
+      <p>
+        Anyway, I digress. Games for the iPod have been a mixed bag at best, with a few
+        shining stars in an otherwise dark sky. Well, Street Fighter IV shines like the
+        freakin&#8217; sun. I&#8217;d learned of its development about six months ago, and
+        would have been happy with something like looked like the 1991 arcade version of
+        <em>SF2</em>. Well, let&#8217;s just say this goes way above and beyond that. SFIV
+        looks like a miniature version of the Xbox 360 game I have at home. It&#8217;s that
+        good. Capcom put their time and effort into this game.
+      </p>
+      <p>
+        The first thing you&#8217;ll notice are the graphics. The opening movie blows up
+        the screen. Yet, even with its quality, it does not give you a hint as to how the
+        game itself is going to look. I&#8217;ve been teased by great game movies before,
+        and I put aside all expectations when it came to this. So, I decided to jump right
+        in. Even the game menus are crisp, and display plenty of polish. I think that&#8217;s
+        the first thing you walk away from this game with, the notion that Capcom really
+        fine tuned this game until it was worthy. And worthy it is.
+      </p>
+      <p>
+        There are eight characters to choose from, along with four game modes, Tournament,
+        Free-Sparring, Dojo, and Training Room. A cool feature is the ability over a network
+        to play against a friend, not unlike what you can do with a PSP. All the modes are
+        customizable, though I suspect most people will stick with the standard three rounds.
+        The best option is Tournament mode, which will feel a lot like playing in the arcade.
+        I fired it up and went into battle, choosing Guile, a character I know pretty well.
+        I wanted to not be overly critical about a control scheme I highly suspected was
+        going to be limited, at best.
+      </p>
+      <p>
+        You&#8217;d think by now I&#8217;d have learned to keep such silly suspicions to
+        myself, or eliminate them altogether. There is a virtual joystick and four buttons
+        (knocked down from the six that were in the console versions) At first look, the
+        joystick appears too big, taking up too much of the screen, but this is clearly
+        done on purpose. Once I started playing, the stick felt natural. Well, as natural
+        as sliding my thumb across a flat screen can. I was really impressed with the fluidity
+        of the controls. Guile reacted immediately, and there were few times where my move
+        didn&#8217;t execute. I tried Dhalsim and Ryu as well, with the same results. As
+        a matter of fact, it seemed easier than using the analog stick on my Xbox. Really.
+        This is why Capcom took so long to release the game. The controls were the most
+        important part of the game, and they wanted to make sure they felt right. They d.
+        Nothing to worry about here at all.
+      </p>
+      <p>
+        The in-game graphics are no match for the Xbox and PS3 versions of the game but
+        are far better than anything I have seen on the iPod so far. I&#8217;ve played or
+        demoed nearly a hundred games, some costing a lot, some not, but this game looks
+        prettier than any of them. So, take that great control scheme, add in amazing graphics,
+        and in my opinion, you have the best game on the iPod so far. Of course, you have
+        to like the genre to feel this way. All I can say is that I like fighting games.
+        I love SFIV for the iPod. I am still playing it. That says a lot.
+      </p>
+      <img src="articles/ar2/screenshot2.png" alt="Screenshot of Hadouken" />
+      <p>
+        The sounds are also impressive, between the character noises, the ambient sound,
+        and the music. It&#8217;s electrifying. Nothing I have played comes close to the
+        fit and finish of this title across the board. I played it through the speaker and
+        everyone around me asked what it was, that it sounded so good. When I showed them
+        the game, they couldn&#8217;t get over it. No one could believe an iPod could do
+        something like this.
+      </p>
+      <p>
+        Obviously, I recommend the game to anyone who wants to kill some time with their
+        iPod. If they keep making games like this for the platform, instead of the silly
+        clones a la Gameloft (not hating on them, just a fact) or word games and the like,
+        then the iPod truly can be a successful game platform. If this is the future, then
+        convergence has really hit its high point. Here&#8217;s to hoping.
+      </p>
+      <p>
+        Highs: Amazing graphics, perfect recreation of a great console title. Controls are
+        spot on, way better than could be expected. Fit and polish are top-notch.
+      </p>
+      <p>
+        Lows: I found it to be a little easier than the console version. Some features are
+        taken out for the iPhone version. Some might balk at the $9.99 price, but it&#8217;s
+        Street Fighter!
+      </p>
+      <p>
+        Overall: Don&#8217;t miss out on the future of gaming on the iPhone. If someone
+        is going to challenge the handhelds, and software like this keeps coming out, then
+        the iPhone/iPod might just be the perfect convergence appliance. I can&#8217;t imagine
+        what this would be like on the iPad.
+      </p>]]>
+    </na:content>
+    <scores>
+      <score>
+        <criteria>Graphics</criteria>
+        <value>10</value>
+      </score>
+      <score>
+        <criteria>Controls</criteria>
+        <value>9</value>
+      </score>
+      <score>
+        <criteria>Sound</criteria>
+        <value>9</value>
+      </score>
+      <score>
+        <criteria>Gameplay</criteria>
+        <value>8</value>
+      </score>
+    </scores>
+  </review>
+
+  <na:newsArticle id="ar3" photo="articles/ar3/photo.jpg">
+    <na:title>The Future of Gaming</na:title>
+    <na:author>Scott Steinburg</na:author>
+    <na:date>2009-01-06</na:date>
+    <na:synopsis>
+      <![CDATA[
+      The year may have barely began, but it's already offering a sneak peek at what interactive entertainment will mean tomorrow.
+      ]]>
+    </na:synopsis>
+    <na:content>
+      <![CDATA[
+      <p>
+        Welcome to 2009. We have seen the future of gaming, and it looks a lot like its
+        for your mother, grandfather and ADD-afflicted pals. Cheerfully, there's still hope
+        for hardcore PC and console enthusiasts. It just doesn’t come in a shiny, shrink-wrapped
+        retail box.
+    </p>
+    <p>
+        Expanding the medium’s reach to include women and seniors, Nintendo's family-friendly
+        DS and Wii systems continue to dominate hardware sales. To meet demand this year,
+        publishers will focus even more heavily on mainstream titles from<i> Grey’s Anatomy</i>
+        to <i>Wii Fit</i>-inspired workout simulation <i>EA Sports Active</i>. Championing
+        socialization and community, free-to-play massively-multiplayer online universes
+        targeted at teens, tweens and social butterflies like <i>Habbo Hotel </i>and zOMG!
+        are expected to fast outpace traditional offerings’ popularity too. Even next-gen
+        console manufacturers are keen to tap the market, predicted to top $13 billion by
+        2011 by analyst group DFC Intelligence. See Sony’s new <i>PlayStation Home </i>cyberspace
+        realm, and Microsoft’s Avatars, which join Nintendo’s Mii virtual alter-egos online.
+    </p>
+    <p>
+        Courtesy of increasing interest in user-generated content, tomorrow’s next superstar
+        designer is also staring you right back in the mirror. What <i>LittleBigPlanet</i>
+        and <i>Spore</i> started (by making it simple and intuitive to build and share original
+        game types and evolvable creatures) titles like <i>Skate 2</i> and <i>LEGO Universe</i>
+        continue. The former allows aspiring Tony Hawks to assemble and swap custom obstacle
+        courses. The latter, encourages submissions of brick-based designs via its Web site
+        for possible digital inclusion by developer NetDevil in the online realm.
+    </p>
+    <p>
+        Never mind upcoming high-profile, DVD or Blu-ray based titles like <i>Halo Wars
+        </i>and <i>Street Fighter IV</i> either. Digital is this year’s watchword, as innovative
+        Internet-only offerings like PlayStation Network’s <i>Flower</i>—where you play
+        the wind, blowing floating petals across verdant plains—take top billing. Thanks
+        to downloadable custom level editors and expansions, yesterday’s bestsellers are
+        also promised second winds. See <i>Fallout 3</i>, presently benefiting from the
+        free G.E.C.K. toolkit, which lets fans create new adventures and in-game objects.
+        It’s also receiving three online add-ons (<i>Operation: Anchorage</i>, <i>The Pitt
+        </i>and <i>Broken Steel</i>), one per month, respectively, from January-March. <i>Grand
+            Theft Auto IV </i>'s downloadable episode “The Lost and Damned” arrives for
+        the Xbox 360 on February 17. Casual portals like BigFishGames.com and MSN Games,
+        and mobile platforms like the iPhone, whose App Store boasts over 3,000 digital
+        diversions, will also heighten interest in value-priced, on-demand delivery.
+    </p>
+    <p>
+        For software makers and enthusiasts, the rules of the game are quickly changing.
+        That means for us, the desktop computer- and HDTV-huddled masses, there’s never
+        been a better time to come out and play.
+    </p>]]>
+    </na:content>
+  </na:newsArticle>
+
+  <review id="ar4" forItems="rl2" photo="articles/ar4/photo.jpg">
+    <na:title>Mortals Rejoice</na:title>
+    <na:author>Calvin Locke</na:author>
+    <na:date>2010-03-20</na:date>
+    <na:synopsis>
+      <![CDATA[
+      Carries much of the feel of the original. Great action, nice visuals...Could use a bit more freshening in terms of gameplay and structure. Still excellent.
+      ]]>
+    </na:synopsis>
+    <na:content>
+      <![CDATA[
+    <p>
+    We all knew it was only a matter of time before the <em>God of War </em>franchise
+    would make its way to the PS3. The previous games were console sellers, the second
+    one causing a rebirth in sales for the PS2 at the end of its cycle, no less. Many
+    thought that game would actually be pushed to the PS3 but Sony was smart. Sell more
+    PS2's which cost nearly nothing to make. Sony was <em>losing</em> $150 per console
+    when the PS3 was released. <em>God of War 2</em> on the PS3 would have been a financial
+    blunder. So, we played 2 on the PS2 and loved it. And then we waited. And waited.
+    E3 2009 brought the long awaited demo of <em>God of War 3</em>, a playable version released on the <em>God of War 1&amp;2
+    </em>redux for the PS3. (Another stroke of genius. Have us pay to replay the first
+    two on the PS3 with updated graphics. Nice.) And now, the game is finally here.
+</p>
+<img src="articles/ar4/screenshot1.jpg" alt="Screenshot of Kratos holding swords" />
+<p>
+    Expectations can hurt a game like this. The hype builds and builds and then even
+    a perfect game cannot match it. As a huge fan of the series, I slipped this disc
+    into my PS3 with the thought in the back of my mind that I might be disappointed.
+    I wasn't. At least, not totally. After the mandatory intro movie (chronicling the
+    first two games) I started a new game and tried to control my anticipation. These
+    games like to throw you right into the action, and that hasn't changed with GOW3.
+    Nothing wrong with staying with a working formula.</p>
+<p>
+    The game starts off with an attack on Olympus by the Titans, with Kratos coming
+    along for the ride to exact revenge against his father, Zeus. I won't spoil anything,
+    so I'll just say this game picks off exactly where the last one ended. The Titans
+    looked massive on screen, and the graphics impressive. But not that impressive.
+    I expected more. I expected total eyeball annihilation. Then I had an 'a-ha' moment.
+</p>
+<p>
+    I'd been spoiled by the remakes for the PS3. Smartly, and quite proud of said smarts,
+    I fired up my PS2 and loaded God of War 2. I remember being dazzled by that game.
+    For the PS2, it was dazzling. Right then, however, after having seen the new game,
+    it looked dated, blocky even. Despite having the PS2 HD cable connected, there was
+    no comparison. My eyeballs weren't annihilated, no, but impressed. That's good enough
+    for me.
+</p>
+<p>
+    Like I said, the Titans blow up the screen. Ditto for the gods, the effects, and
+    the terrain. All of it contains a polish you don't see too often in games. This
+    is why I stay up til 3AM with a controller in my hand, to play a game with this
+    much attention to detail. Santa Monica studios put their time in on this one and
+    the effort has paid off. There are a lot of in game movies at the start, and I found
+    myself with my mouth open more than once. If you look for graphics in a game, this
+    is the sort of game you want to play. It justifies that HDTV purchase.<br>
+</p>
+<img src="articles/ar4/screenshot2.jpg" alt="Screenshot of Kratos fighting" />
+<p>
+    An overlooked area of a game, at least in my opinion, is the sound. This series
+    always had good sound, and the third keeps up with that tradition. The soundtrack
+    goes along with the action, rising and falling, and immersing you into the experience
+    even further. Spell effects and other action sounds are spot on, and very reminiscent
+    of the previous games. The PS3 packs plenty of media firepower and this games uses
+    it. Surround sound systems explode while playing <em>God of War 3</em>. That's how
+    it should be.
+</p>
+<p>
+    None of this would matter if the gameplay wasn't there. It is. Controls are no different
+    than before, with a few add-ons to keep things fresh. Some of it is still a little
+    too button-mashy for me but I guess most fans of the game won't mind or even notice
+    at all. I don't like the 'events' where you have to tap in sequence and such, but
+    again, it is a hallmark of the series. I just think we can move past that. (I mean
+    sequences like beheading a Medusa, mouth-stabbing a Minotaur, etc) If this wasn't
+    a problem for you in the past, you won't mind it at all now. You get new weapons,
+    new spells, and there are plenty of clever puzzles to solve. Platforming plays a
+    more important role in this game, something again I am not a fan of but understand
+    others are. I played through the game and found enjoyment throughout the greater
+    part of it. I can't ask for more than that.
+</p>
+<p>
+    <em>GOW </em>fans probably already bought the game. If you haven't, there is no
+    need for hesitation. It's as good as you want it to be. There's no disappointment.
+    Those on the fence, well, that depends why you are fence-sitting. If the previous
+    two games didn't light your fire, there's nothing new enough here to change your
+    mind about the series. If you've never played one before, I highly recommend saving
+    30 bucks and getting the <em>God of War Collection</em>. It's a better way to get
+    introduced to the series, and you'll understand the plot better. Still, you won't
+    be upset with this game.
+</p>
+<p>
+    Highs: Great visuals, superb sound. Game brings you right back into the universe.
+    Controls are what they should be and the bigger boss battles will entice many.</p>
+<p>
+    Lows: In some ways, a lot of the same. Depends on how you look at it. Some odd camera
+    bugs but they are few and far between.
+</p>]]>
+    </na:content>
+    <scores>
+      <score>
+        <criteria>Gameplay</criteria>
+        <value>9</value>
+      </score>
+      <score>
+        <criteria>Graphics</criteria>
+        <value>8</value>
+      </score>
+      <score>
+        <criteria>Story</criteria>
+        <value>10</value>
+      </score>
+      <score>
+        <criteria>Innovation</criteria>
+        <value>6</value>
+      </score>
+    </scores>
+  </review>
+
+  <review id="ar5" forItems="rl3" photo="articles/ar5/photo.jpg">
+    <na:title>Untraditional and Unbelievable</na:title>
+    <na:author>Calvin Locke</na:author>
+    <na:date>2010-02-27</na:date>
+    <na:synopsis>
+      <![CDATA[
+      Okay, in many ways not a traditional game, but the graphics and unique gameplay will astound you. Not the future of gaming, so to speak, but certainly a clever take on the genre...you'll be thinking and talking about this game for a long time.
+      ]]>
+    </na:synopsis>
+    <na:content>
+      <![CDATA[
+    <p>
+    Back in 1999, Quantic Dream released a quirky title called <a href="http://pcgames.gwn.com/reviews/gamereview.php/id/190/p/0/title/Omikron_The_Nomad_Soul.html">
+        Omikron: The Nomad Soul</a> which I reviewed for PCGameworld way back when.
+    The title showed a lot of promise, and made it clear Quantic Dream had no interest
+    in making standard games. They wanted to take things to a different level, and they
+    certainly succeeded with <em>Omikron.</em> I really liked the game, and it's follow-up
+    <em>Indigo Prophecy</em> which also boasted interesting takes on the gaming genre.
+    What I didn't like about those titles was how strange they were. Everything was
+    good with the twist on gameplay, but the games themselves bordered on the psychadelic.
+    After having watched trailer after trailer of <em>Heavy Rain</em> I hoped this one
+    would be rooted a bit more in reality. Luckily, this is the case.
+    </p>
+    <img src="articles/ar5/screenshot1.jpg" alt="Screenshot of woman looking in the mirror" />
+<p>
+    To get the most important part of the game out of the way, yes, the graphics will
+    stun you. People move realistically, and there is no zombie effect, no dead eyes
+    that take away the realism. These character models are damn near perfect, the sort
+    we have been promised for so long I forgot exactly when the promises started. The
+    above screenshot gives you just a hint of the graphics, illustrating how well they
+    got even mirror effects. Think back to the original XBox demos...people thought
+    it was amazing that there were semi-realistic water effects in that. This goes far
+    and above, offering a level of graphical intensity unmatched by any game I have
+    played so far. Any game.
+    </p>
+<p>
+    Games aren't all about graphics, though I would say you could just sit and watch
+    this one for hours and be entertained. Intead, Quantic Dream wants to immerse players
+    in a universe, in a world that seems so close to reality you'll find yourself caring
+    about the characters as they go through their trials on screen. The first way to
+    immerse you is to make the controls as seamless as possible. There's nothing natural
+    about using an analog stick to walk, but <em>Heavy Rain</em> makes it feel a right
+    as can be. Most of the action on the screen occurs from button combinations, shaking
+    the controller and a variety of other inputs. The game takes full use of the Sixaxis
+    controller.
+</p>
+<p>
+    The story is touching. One of the four characters you will play, Ethan, watched
+    his son die after losing him in a mall. He'd previously been a successful architect
+    with what appeared to be the perfect family. After that, he is destroyed, a shell
+    of himself, and struggling to maintain a relationship with his remaining son. Well,
+    after Ethan suffers from a blackout, he loses his second son, only to discover he
+    has been captured by the Origami Killer, someone running through the streets of
+    the city murdering young boys and leaving an origami figure in their hand. You must
+    track down the killer as Ethan, but also as private investigator Scott Shelby and
+    FBI agent Norman Jayden. Each character has a different angle and the story goes
+    in and out of their lives as they race to find Ethan's son.
+    </p>
+    <p>
+    You're forced to make extremely difficult decisions in <em>Heavy Rain</em> and this
+    si one of the best features of the game. <em></em>Every action has a reaction, and
+    characters will react to you later in the game in response to earlier events. In
+    a very interesting twist, your character can die and the story will move forward.
+    There are several different endings to the game (all with the same killer of course)
+    and many surprises along the way. Quantic Dream put a lot of effort into making
+    this a storytelling vehicle. In some ways, the gameplay itself suffers, but that's
+    part of the equation.
+</p>
+<p>
+    Some gamers might be put off by the lack of 'real' gameplay here. The game works
+    for me, but I like murder mysteries and movies like that and this seemed like a
+    very immersive interactive movie. I cared for the characters and wanted good things
+    to happen for them. I also felt a bit in control. The game does let you do things
+    your own way. The below video will give you an idea of what you have to do in the
+    game, but understand, it is a bit of a spoiler. It won't give too much plot away,
+    but it is one of the most shocking parts of the game and you might want to witness
+    it for yourself in game first. It is a little violent, so consider that before watching.
+</p>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/J9K_T_klwRQ" frameborder="0"
+    allowfullscreen></iframe>
+<p>
+    Pretty amazing, huh. Take note of the way you can get into your character's head,
+    really understand what they are thinking, and then guide them through something
+    so awfully difficult. I felt like I was right there when I played through this scene.
+    The sense of realism amazed me. That happens a lot during the game, between the
+    graphics, the choices you have to make and the results of your actions. Nothing
+    of course, could prepare me for the the big revelation at the end. Truly inspired.<br>
+</p>
+<p>
+    The argument will rage on about whether or not this is a game in the traditional
+    sense. I don't think it really matters. What does is how perfectly Quantic Dream
+    pulled this off. It's obvious a cinematic game had been their goal for years, perhaps
+    since <em>Omikron</em> and they have finally achieved it. Kudos for that. This is
+    digital enterainment, the sort of game your non-gamer friends or significant others
+    will not mind watching while you play. As a matter of fact, they will love to watch,
+    and want to know what is going to happen next. Imagine being able to play a game
+    on date night. Utopia is within our grasp.
+    </p>
+    <img src="articles/ar5/screenshot2.jpg" alt="Screenshot of two men arguing" />
+<p>
+    There's a free demo at the Playstation Store and I highly recommend playing it first.
+    Like I said, some gamers are put off by the gameplay here. It's a matter of taste,
+    and sixty bucks is sixty bucks. The game achieves its goal with near perfection
+    and I really have a hard time believing someone would hate it. I am sure someone
+    will. That's the thing about taste; we all interpret it differently.</p>
+<p>
+    Highs: The absolute best graphics and facial animation seen anywhere. Weather effects
+    and ambient sounds are stunning as well. A unique twist on gameplay and plot that
+    make the player feel a part of the world they are watching. Truly immersive.</p>
+<p>
+    Lows: Might put some people off with the non-standard gameplay. Some endings don't
+    make much sense, as if there is a desired outcome no matter what you do. All of
+    the boys in the game seem to have the same voice. Some of the acting a little stiff.
+</p>]]>
+    </na:content>
+    <scores>
+      <score>
+        <criteria>Innovation</criteria>
+        <value>10</value>
+      </score>
+      <score>
+        <criteria>Graphics</criteria>
+        <value>10</value>
+      </score>
+      <score>
+        <criteria>Story</criteria>
+        <value>9</value>
+      </score>
+    </scores>
+  </review>
+
+  <review id="ar6" forItems="rl9 rl10" photo="articles/ar6/photo.jpg">
+    <na:title>Welcome to Hell</na:title>
+    <na:author>Charles Onyett</na:author>
+    <na:date>2007-07-20</na:date>
+    <na:synopsis>
+      <![CDATA[Notice to innocent consumers: avoid Call for Heroes as if your life depends on it. It's enough to destroy your motivation to ever game again. If you see it on a retail shelf, scream like you're on fire, berate the store manager for carrying the game, sprint out, drive home and immediately take a shower.]]>
+    </na:synopsis>
+    <na:content>
+      <![CDATA[
+      <p>You're walking through a forest and unknowingly get tree sap on your finger. You sit to eat in a clearing overlooking an expanse of forest. There are mountains in the distance wreathed in wisps of cloud. The mid-afternoon sky is otherwise brilliantly clear, and the temperature cool enough to keep you from sweating. You sit down on a red and white checkered blanket and procure a meticulously prepared turkey sandwich from a wicker basket. You unwrap the tinfoil, grasp the bread, its doughy consistency yielding ever so slightly to your fingertips, and take a bite. The lettuce is still crisp, the turkey tender, the bread plump with just the right degree of moisture, yet there's something you can't identify. Four chews in, it's stuck in your teeth; it's the sap from your hand, and it's soiled your taste buds and ruined a perfectly good sandwich. Call for Heroes: Pompolic Wars is that sap.</p>
+      <p>Things are off to bad start even before you install the game. On the back of the box, a caption reads, "Character gains experience which will help him to upgrade his strength, armor and health." That's apparently supposed to be a unique gameplay feature.</p>
+      <img src="articles/ar6/screenshot1.jpg" alt="Screenshot of character fighting creatures" />
+      <p>It only gets worse from there. One of two character classes is available, a girl or a guy, an Amazon and a Warrior, respectively. They have some of the most frustratingly inexact jumping this reviewer has ever encountered, along with some absolutely abysmal running animations. Imagine if a marionette had its strings fastened to the pistons of a car engine that was pulling it forward.</p>
+      <p>We'd love to describe the narrative setup, but there isn't one in the game. The back of the retail box lists something about a dimensional rift being torn open. Led by some guy named Pompolic, demons are apparently trying to enslave the human race. Again, there's absolutely no indication of this in the actual game. Going back to the game box, the player's goal is apparently to collect Dark Souls to defeat Pompolic. These souls, according to the box, "are infiltrating our minds, and making us slaves of evil. They cannot be easily defeated…" Lies!</p>
+<p>
+You see, dear gamer, these Dark Souls aren't doing anything except floating a foot off the ground in each of Call for Heroes' stages. They're waiting for you to collect them, since after a certain number have been acquired you progress to the next, even more awful stage. But beware, for after every Dark Soul is collected, a random number of idiotic enemies will spawn and drive you mad with their horrible artistic design and infantile AI.</p>
+<p>
+If we were to compare Call for Heroes to any other game, we'd say it more closely resembles Gauntlet. But even saying so severely tarnishes Gauntlet's name, and in many ways Call for Heroes is an inferior product to even the 1985 NES version of the old-school dungeon crawler.
+</p>
+<img src="articles/ar6/screenshot2.jpg" alt="Screenshot of character walking" />
+<p>
+Quotix Software's game commits some unforgivable crimes of design, with one standing above the others: disastrous level layout. Oftentimes the Dark Souls are hidden in alcoves, which in many stages you happen upon by luck. There's a meter indicating how close you are to a Soul, but given how jarringly convoluted some of the level designs are and the lack of a mini-map, it doesn't make much of difference. More than likely, you'll spend several minutes retracing your steps through unnecessarily confounding labyrinths of horrendously textured levels. On the way, you'll have to deal with such exotic enemies as skeletons, crawling insect things, bigger crawling insect things, robed things that shoot lighting, crotch monsters, and zombies that shoot fireballs. They're all dumb as cows, and fighting them is nearly as fun as scrubbing soap scum from between the tiles of a shower stall with a soft-bristled toothbrush. </p>
+<p>
+The game's combat is so frustrating because you're constantly swarmed with enemies. Trying to skillfully dodge anything is near impossible thanks to a floaty control scheme which, in combination with nonsensical stage designs and supremely imprecise jumping, ensures you'll inadvertently get stuck in corners or hung up on environmental obstacles. Adding to the list of woes is the fact that numerous enemy types, for some unholy reason, get homing fireballs. This means you'll waste countless lives trying to dodge the projectiles on stages with insta-death ledges. We even experienced one instance of falling into a water pit and surviving only to discover there was absolutely no way out. We had to reload the level. Brilliant!
+</p>
+<p>
+Let's not forget one of this game's chief features - your characters can level up. Oh sweet redemption, surely the upgrades will drastically shift the gameplay dynamics toward the enjoyable end of the spectrum…right? Though there are defense boosting skills, sentry wards, and various attack enhancers, they utterly fail to add anything worthwhile. Picking up the other varieties of icons floating around stages like monster icons or coins net you a few special regeneration and god-mode type abilities, but again, it doesn't save this game. With continued use, the different melee and ranged weapons level up as well, though you can't really tell the difference.
+</p>
+<p>
+And that's already more than should have been written about this game. Oh, right, and there are bugs and stability issues. Wait, there's also a map editor to facilitate self-torture. Bonus.
+</p>
+]]>
+    </na:content>
+    <scores>
+      <score>
+        <criteria>Presentation</criteria>
+        <value>2</value>
+      </score>
+      <score>
+        <criteria>Graphics</criteria>
+        <value>1</value>
+      </score>
+      <score>
+        <criteria>Sound</criteria>
+        <value>1</value>
+      </score>
+      <score>
+        <criteria>Gameplay</criteria>
+        <value>1</value>
+      </score>
+      <score>
+        <criteria>Story</criteria>
+        <value>1</value>
+      </score>
+    </scores>
+  </review>
+
+  <review id="ar7" forItems="rl11 rl12 rl13" photo="articles/ar7/photo.jpg">
+    <na:title>Forgettable fun</na:title>
+    <na:author>Greg Miller</na:author>
+    <na:date>2012-04-24</na:date>
+    <na:synopsis>
+      <![CDATA[
+      Having no impact is kind of the M.O. of Prototype 2. I enjoyed leveling up Heller and completing side quests, but none of it really meant anything to me. Outside of the Trophies I have for my efforts, I doubt I'll remember much of Prototype 2's sterile side missions and curse word-laden dialogue. Prototype 2 is fun, but it sure is forgettable.
+      ]]>
+    </na:synopsis>
+    <na:content>
+      <![CDATA[
+      <p>
+        There comes a point while playing Prototype 2 when you realize the marketing campaign was a lie. The Homecoming trailer weaves this heart wrenching story of a soldier who told his family to trust the government and how it cost them their lives. With that pain, Sgt. James Heller becomes a relatable character and we want to see him use his superpowers to exact revenge on those responsible. But that motivation is lost when the game starts and Heller begins shoehorning curse words into every other sentence. The emotional connection to our protagonist is severed. Heller becomes an angry caricature, and Prototype 2 becomes an enjoyable but predictable action title.
+      </p>
+      <img src="articles/ar7/screenshot1.jpg" alt="Screenshot of character tearing a tank apart" />
+      <p>If you skipped the original Prototype, you won't have an issue jumping into the sequel. About 14 months after the events of the first game, New York City is once again in the grips of a viral outbreak -- supposedly at the hands of Alex Mercer, the antihero of the original title. Heller blames Mercer for the death of his family, and through a 14 or so-hour game (if you do all the side quests), it's our job to rain vengeance.</p>
+      <p>
+        The story doesn't get much deeper than that. You'll partner up with shady characters throughout the journey, and they'll feed you missions that usually end with Heller beating the hell out of a bunch of soldiers or mutants. The setup is repetitive, but the action is entertaining.
+      </p>
+      <p>
+        Prototype 2 gives you five weapons to morph Heller's hands into, and you assign two of them to the face buttons. See, Heller's powers -- given to him in a WTF moment by Mercer -- allow him to create these tools of destruction, leap tall buildings in a single bound, and ingest people so he can steal their memories and shapeshift into their forms. He's also packing the ability to turn people into bio-bombs. So, know that.
+      </p>
+      <p>
+        It's a delicious recipe. Leaping into the air, targeting a foe and swooping in for a claw attack that beheads the bad guy is fun. Sneaking around a base disguised as a solider and absorbing unaware enemies is cool. Prototype 2 excels at making you feel like a badass. Completing tasks levels you up so you can move faster, fly farther and become invulnerable to gunfire. Absorbing specially marked characters upgrades your abilities so you can pounce on victims from farther away and increase the range of your Whipfist.
+      </p>
+      <p>
+        With each mission, you feel Heller getting stronger and stronger. Brutes that used to be the bane of your existence eventually become your pets and the first helicopter you KO with an uppercut will leave you feeling like the apex predator of New York City.
+      </p>
+      <p>
+        On top of that, developer Radical Entertainment nails what work works in open world games -- collectables. New York City is broken into three zones, and each section has a slew of side tasks to knock out. There are infected lairs to clear, teams to kill and blackboxes to find. Although you'll need to find these locales, the general areas are marked on your map. This is awesome and led to me spending an hour knocking out side missions as soon as I stepped foot on each island.
+      </p>
+      <img src="articles/ar7/screenshot2.jpg" alt="Screenshot of character flying" />
+      <p>
+        And while that's rad, it kind of points out one the problem with Prototype 2. I was playing to complete it -- to get the 14 blackboxes in the green zone and to get Heller's tendrils to level four. The grinding is fun, but I couldn't have cared less about why this priest had me attacking the 400th Blackwatch soldier that looked just like the 40th.
+      </p>
+      <p>
+        Even though becoming this ultimate killer is cool, it doesn't hide the fact that nearly every mission is running into a base, forcefully assuming an identity, and exiting the alert. It doesn't hide the fact that the animations for many of Heller's moves look like those of the nearly 3-year-old Prototype, which look like those of the nearly 7-year-old The Incredible Hulk: Ultimate Destruction.
+      </p>
+      <p>
+        Outside of the animations, Prototype 2 still doesn't look like a 2012 blockbuster game. Blackwatch badges are muddy on characters, and Heller's absorbing animations are clearly going through his body and not into it. The best example of all this comes as a stabbing scene at the very beginning. The knife goes into the body, but it's just gliding in like it's stabbing air -- the moves have no impact.
+      </p>
+      ]]>
+    </na:content>
+    <scores>
+      <score>
+        <criteria>Presentation</criteria>
+        <value>7</value>
+      </score>
+      <score>
+        <criteria>Graphics</criteria>
+        <value>6</value>
+      </score>
+      <score>
+        <criteria>Sound</criteria>
+        <value>7</value>
+      </score>
+      <score>
+        <criteria>Gameplay</criteria>
+        <value>8</value>
+      </score>
+    </scores>
+  </review>
+
+  <review id="ar8" forItems="rl14" photo="articles/ar8/photo.jpg">
+    <na:title>Great concept, but not enough content to back it up.</na:title>
+    <na:author>Audrey Drake</na:author>
+    <na:date>2012-04-13</na:date>
+    <na:synopsis>
+      <![CDATA[
+When the 3DS first launched, the included AR games were easily the software highlight, and since then we've been eager to see the concept returned to and expanded upon. Spirit Camera: The Cursed Memoir had the opportunity to do just that. Unfortunately, while the game has great atmosphere and plenty of potential, the three hour campaign lacks any real depth and is rather inconvenient to play. It’s too bad, because with a longer campaign and more content, Spirit Camera could have been a revolutionary experience. As is, it fails to go much farther than Face Raiders did - and that was free.
+      ]]>
+    </na:synopsis>
+    <na:content>
+      <![CDATA[
+      <p>
+      Following in the footsteps of Resident Evil Revelations, a new survival horror game has made its way to the Nintendo 3DS. A spinoff of the Fatal Frame series, Spirit Camera: The Cursed Memoir sticks to familiar territory for the franchise - in other words, ghosts, exorcisms and ancient rituals. It follows the story of a young girl named Maya who lost her memory. She's somehow gotten herself trapped in the mysterious Diary of Faces (the 16 page AR manual that comes included with the game), and it's up to you to solve the mystery of the Woman in Black and save both of you from a terrible fate.
+      </p>
+      <img src="articles/ar8/screenshot1.jpg" alt="Screenshot of viewing a doll through a cameral lens" />
+      <p>
+      The highlight of the game is its innovative use of the 3DS tech. In addition to its AR capabilities, Spirit Camera lets you use the system's gyroscope technology to spin the 3DS around and view the game's spirits in the real world. Looking around to find and talk to Maya constitutes the bulk of the experience, as the chilling narrative is largely told by the young girl, as well as by viewing the Diary of Faces with the Camera Obscura (your 3DS camera, in other words) and its different lenses. The atmosphere is the best thing the game has going for it, with great voicework for Maya and haunting sound effects scattered throughout to keep players ill at ease. The story isn't ground-breaking, and can be a tad predictable, but it serves its purpose well.
+      </p>
+<p>
+With such great ideas, Spirit Camera has a lot going for it. Unfortunately, things fall apart when it comes to actual gameplay. The cool concept simply fails to find any satisfying gameplay application, as the great atmosphere the developers created is barely used. The whole campaign takes only about two or three hours to complete, and there just isn't much for the player to do during the majority of it. In fact, most of the game comes down to just listening to Maya and observing things that are happening, with a handful of ghost fights in between. The fights themselves don't take very long and tend to get repetitive. All you do is spin around with your 3DS looking for the violent spirit, then take a picture at just the right moment to inflict damage. It's fun, but lacks enough variety (or frequency) to really matter.
+</p>
+<img src="articles/ar8/screenshot2.jpg" alt="Screenshot of reading a book containing mysterious clues" />
+<p>
+The experience is minutely extended by a few camera and AR-based mini-games (letting you do things like fight ghosts that are "haunting" your friends or take pictures to see what spirits are hiding in them). For the most part these additions feel tacked on, lacking any real depth or appreciable quality. As a result, Spirit Camera feels more like a downloadable title than a full release. It's a shame that such an amazing concept was squandered by such a shallow gameplay experience.
+</p>
+<p>
+One last hurdle - Spirit Camera is a bit inconvenient to play. You have to be in a well-lit area with ample room to move around and a full range of motion, either sitting in a swivel chair or standing so you can spin around quickly and freely. You also ideally need a table nearby to lay the Diary of Faces on. In other words, you won't be playing this one in a car, on the couch, or even in a dark room (too bad, because that last one would have helped up the fright factor significantly). It's an unfortunate consequence of the game's reliance on AR and gyroscope technology, but one that makes it harder to play than it should be.
+</p>
+      ]]>
+    </na:content>
+    <scores>
+      <score>
+        <criteria>Presentation</criteria>
+        <value>8</value>
+      </score>
+      <score>
+        <criteria>Graphics</criteria>
+        <value>6</value>
+      </score>
+      <score>
+        <criteria>Sound</criteria>
+        <value>8</value>
+      </score>
+      <score>
+        <criteria>Gameplay</criteria>
+        <value>5</value>
+      </score>
+      <score>
+        <criteria>Innovation</criteria>
+        <value>7</value>
+      </score>
+    </scores>
+  </review>
+
+</publicationsExtCatalog>

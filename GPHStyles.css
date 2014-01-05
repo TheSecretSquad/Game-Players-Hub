@@ -1,0 +1,640 @@
+﻿/* Global Styles */
+body
+{
+	background-image: url(images/pageBackground.png);
+	padding: 0;
+	margin: 0;
+	color: #333333;
+	font-family: nina, sans-serif;
+}
+
+a
+{
+	color: #0066FF;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover
+{
+    background-color: rgba(0, 0, 0, 0.10);
+    border-radius: 3px;
+}
+
+a img
+{
+    border: none;
+    padding: 5px;
+}
+
+a:hover img
+{
+    background-color: rgba(0, 0, 0, 0.10);
+    opacity: 0.6;
+}
+
+/* End Global Styles */
+
+/* Font Styles */
+@font-face {
+	font-family: 'nina';
+	src: url('fonts/nina.eot');
+	src: local('☺'),
+	    url('fonts/nina.woff') format('woff'),
+	    url('fonts/nina.ttf') format('truetype'),
+	    url('fonts/nina.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+p, h1, h2, h3, h4
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+p
+{
+	font-size: 14px;
+	line-height: 1.25em;
+}
+
+span.labelText
+{
+	font-weight: bold;
+}
+/* End Font Styles */
+
+/* Header Styles */
+header
+{
+	height: auto;
+	width: 100%;
+	background-color: #0B0F14;
+	background-image: url(images/topBackground.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0px;
+	box-shadow: 0 -1px 10px 1px #777777;
+	margin-top: 40px;
+}
+
+#headerContent
+{
+	width: 66%;
+	min-height: 200px;
+	min-width: 560px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	top: -40px;
+}
+
+#headerContent nav
+{
+	display: block;
+	position: relative;
+	float: right;
+	min-width: 500px;
+}
+
+#headerContent #navWrapper
+{
+    display: inline-block;
+    width: 100%;
+    margin-top: 95px;
+}
+
+#headerContent nav a
+{
+	display: inline-block;
+	font-size: 18px;
+	padding: 5px 10px 5px 10px;
+	float: right;
+	margin: 0 0 0 10%;
+}
+
+#headerContent nav a.current
+{
+    background-color: rgba(0, 0, 0, 0.10);
+    border-radius: 3px;
+}
+
+#tagLine
+{
+	display: inline;
+	position: relative;
+	top: 10px;
+}
+
+#headerBottomDivider
+{
+	background-color: #DEDEE4;
+	height: 20px;
+	border-bottom: 2px groove #FFFFFF;
+}
+
+#headerBottomShadow
+{
+	width: 100%;
+	height: 39px;
+	background-image: url(images/dividerShadow.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+/* End Header Styles */
+
+/* Article Styles */
+#mainContent
+{
+	height: auto;
+	width: 66%;
+	min-width: 560px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 50px;
+}
+
+#mainContent.games
+{
+    min-width: 650px;
+}
+
+#mainContent.thin
+{
+    width: 58%;
+}
+
+#mainContent article, .platformSection
+{
+	width: 100%;
+	height: auto;
+	color: #333333;
+	display: block;
+	position: relative;
+	background-image: url(images/articlePreviewDivider.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+	padding-bottom: 83px;
+	overflow: hidden;
+}
+
+.platformSection img
+{
+    vertical-align: middle;
+    width: 125px;
+    float:left;
+    clear:left;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.platformSection span.labelText
+{
+    text-align: center;
+    float:left;
+}
+
+article h1, article h1 a
+{
+	font-size: 26px;
+	position: relative;
+	font-weight: bold;
+}
+
+article h2
+{
+	font-size: 18px;
+}
+
+div.platformSection h1
+{
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.articleBlock
+{
+	height: auto;
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.articleContent p
+{
+    margin-top: 10px;
+    font-family: Arial, Sans-Serif;
+}
+
+.articleContent img:not(.articlePhoto)
+{
+    width: 50%;
+    display: block;
+    border: 4px solid rgba(0,0,0,0.33);
+    border-radius: 3px;
+}
+
+.articleContent img:not(.articlePhoto):nth-of-type(odd)
+{
+    float:left;
+    margin: 7px 7px 7px 0;
+}
+
+.articleContent img:not(.articlePhoto):nth-of-type(even)
+{
+    float:right;
+    margin: 7px 0px 7px 7px;
+}
+
+.articleContent iframe
+{
+    display:block;
+    margin: 0 auto 0 auto;
+}
+
+.gameInfoBlock
+{
+	height: auto;
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.scoreBlock
+{
+	width: 150px;
+	height: 100%;
+	float: right;
+	text-align: right;
+}
+
+article .scoreBlock h1
+{
+	font-size: 36px;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.10);
+	border-radius: 3px;
+}
+
+.review .titleDetails
+{
+	width: 66%;
+	float: left;
+	margin-right: 15px;
+}
+
+.articleMiniText
+{
+	font-size: 12px;
+	position: relative;
+	margin-top: 5px;
+}
+
+.articleSummary
+{
+	margin-top: 20px;
+	height: auto;
+	display: inline-block;
+}
+
+.articlePhoto
+{
+	width: 210px;
+	border: 8px solid rgba(0,0,0,0.33);
+	margin-right: 20px;
+	float: left;
+	border-radius: 3px;
+}
+
+#featured
+{
+	background-color: rgba(0,0,0, 0.33);
+	min-height: 370px;
+	height: auto;
+	position: relative;
+	clear: both;
+	bottom: 0px;
+	padding: 10px;
+	color: #DEDEE4;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-top: 90px;
+}
+
+#featured img
+{
+	width: 58%;
+	height: 58%;
+	float:left;
+	padding-right: 1%;
+}
+
+#featured .gameInfoArticleDivider
+{
+    margin-top: 10px;
+    width: 38%;
+    opacity: .1;
+}
+
+.gameInfoArticleDivider
+{
+	 width: 100%;
+}
+
+.titleDetails
+{
+	width: 695px;
+}
+
+table.criteria
+{
+    font-size: 12px;
+	width: 60%;
+	float: right;
+}
+
+table.criteria th, td
+{
+    text-align: right;
+}
+
+table.criteria th
+{
+    font-weight: bold;
+}
+
+table.gameAttrs td, table.gameAttrs th
+{
+    text-align: left;
+}
+
+table.releases
+{
+    width: 100%;
+}
+
+table.releases tr
+{
+    min-height: 50px;
+}
+
+table.releases td, table.releases th
+{
+    padding: 7px;
+    border-radius: 3px;
+}
+
+table.releases tr:nth-of-type(2n+1)
+{
+    background-color: rgba(217,217,223, .66);
+    color: #333333;
+}
+
+table.saleItems
+{
+    font-size: 12px;
+    width: 100%;
+}
+
+table.saleItems tr
+{
+    min-height: 10px;
+}
+
+table.saleItems th
+{
+    color: #BBBBBB;
+}
+
+.readMoreLink
+{
+	position: relative;
+	bottom: 0px;
+	right: 0px;
+}
+
+/* End Article Styles */
+
+/* Score Colors */
+.score90_100
+{
+	color: #990099;
+}
+
+.score80_89
+{
+	color: #0000CC;
+}
+
+.score70_79
+{
+	color: #0066FF;
+}
+
+.score60_69
+{
+	color: #00CC00;
+}
+
+.score50_59
+{
+	color: #666666;
+}
+
+.score40_49
+{
+	color: #FFFF00;
+}
+
+.score30_39
+{
+	color: #FF9900;
+}
+
+.score20_29
+{
+	color: #FF3300;
+}
+
+.score10_19
+{
+	color: #CC0000;	
+}
+
+.score0_9
+{
+	color: #000000;
+}
+/* End Score Colors */
+
+button
+{
+    width: 100%;
+    height: 21px;
+    border: none;
+    font-family: nina, sans-serif;
+    color: #333333;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 2px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+button.closed
+{
+    background-image: url(images/detailsArrowDown.png);
+}
+
+button.open
+{
+    background-image: url(images/detailsArrowUp.png);
+}
+
+.detailsClosed
+{
+    height: 22px;
+    overflow: hidden;
+    display: block;
+}
+
+.detailsOpen
+{
+    height: auto;
+}
+
+.colorRuleWrap
+{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.colorRule
+{
+    width: 10%;
+    height: 60px;
+    float:left;
+    position: relative;
+    border-radius: 3px;
+    margin: 0 10px 0 0;
+}
+
+.colorRule+p
+{
+    float: left;
+    background-color: rgba(0,0,0, 0.05);
+    border-radius: 3px;
+    padding: 20px 10px 0 10px;
+    height: 40px;
+}
+
+#blackRule
+{
+    background-color: #000000;
+}
+
+#darkRedRule
+{
+    background-color: #CC0000;
+}
+
+#redRule
+{
+    background-color: #FF3300;
+}
+
+#orangeRule
+{
+    background-color: #FF9900;
+}
+
+#yellowRule
+{
+    background-color: #FFFF00;
+}
+
+#grayRule
+{
+    background-color: #666666;
+}
+
+#greenRule
+{
+    background-color: #00CC00;
+}
+
+#lightBlueRule
+{
+    background-color: #0066FF;
+}
+
+#darkBlueRule
+{
+    background-color: #0000CC;
+}
+
+#purpleRule
+{
+    background-color: #990099;
+}
+
+footer
+{
+    height: 200px;
+    width: 100%;
+    background-color: #0B0F14;
+}
+
+#footerContent
+{
+    width: 66%;
+    height: auto;
+    margin: 0 auto 0 auto;
+    position: relative;
+}
+
+#footerNav
+{
+    width: 560px;
+    margin: 0 auto 0 auto;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+#footerContent a
+{
+    float: left;
+    display: block;
+    margin-top: 60px;
+}
+
+#footerContent a:not(:last-of-type)
+{
+    margin-right: 15%;
+}
+
+#footerContent a:first-of-type
+{
+    margin-left: 15%;
+}
+
+#footerTopDivider
+{
+	background-color: #DEDEE4;
+	height: 20px;
+	border-top: 2px groove #FFFFFF;
+}
+
+#footerContent a:hover
+{
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 3px;
+}

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ______                   ______  _                             _     _       _                         
+ / _____)                 (_____ \| |                           | |   | |     | |                        
+| /  ___  ____ ____   ____ _____) ) | ____ _   _  ____  ____ ___| |__ | |_   _| | _     ____  ___  ____  
+| | (___)/ _  |    \ / _  )  ____/| |/ _  | | | |/ _  )/ ___)___)  __)| | | | | || \   / ___)/ _ \|    \ 
+| \____/( ( | | | | ( (/ /| |     | ( ( | | |_| ( (/ /| |  |___ | |   | | |_| | |_) )_( (___| |_| | | | |
+ \_____/ \_||_|_|_|_|\____)_|     |_|\_||_|\__  |\____)_|  (___/|_|   |_|\____|____/(_)\____)\___/|_|_|_|
+                                          (____/                                                         
+
+File:     about.xml
+Author:   Peter DiSalvo
+Date:     April 2012
+
+Purpose:  Styler page holds a reference to the file that actually holds
+          the data to be styled. Allows XSLT to reach the file in xmlDoc tag.
+          The target xml document can be styled multiple times by using this
+          styler document, and another XSLT file in the target document.
+-->
+
+<?xml-stylesheet type="text/xsl" href="about.xslt"?>
+<styler>
+  <xmlDoc>aboutPage.xml</xmlDoc>
+</styler>

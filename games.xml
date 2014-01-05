@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  ______                   ______  _                             _     _       _                         
+ / _____)                 (_____ \| |                           | |   | |     | |                        
+| /  ___  ____ ____   ____ _____) ) | ____ _   _  ____  ____ ___| |__ | |_   _| | _     ____  ___  ____  
+| | (___)/ _  |    \ / _  )  ____/| |/ _  | | | |/ _  )/ ___)___)  __)| | | | | || \   / ___)/ _ \|    \ 
+| \____/( ( | | | | ( (/ /| |     | ( ( | | |_| ( (/ /| |  |___ | |   | | |_| | |_) )_( (___| |_| | | | |
+ \_____/ \_||_|_|_|_|\____)_|     |_|\_||_|\__  |\____)_|  (___/|_|   |_|\____|____/(_)\____)\___/|_|_|_|
+                                          (____/                                                         
+
+File:    games.xml
+Author:  Peter DiSalvo
+Date:    April 2012
+
+Purpose:  Game catalog file.
+-->
+
+<?xml-stylesheet type="text/xsl" href="games.xslt"?>
+<gameCatalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.gameplayershub.com/gameCatalog schemas\gameCatalog.xsd"
+             xmlns:sal="http://www.gameplayershub.com/sale"
+             xmlns="http://www.gameplayershub.com/gameCatalog">
+
+  <game genres="Fighting" publishers="pu1" homepage="http://www.capcom.co.jp/iphone/sf4_en">
+    <title>Street Fighter IV</title>
+    <release id="rl1" platform="pl3" image="images/games/streetFighter4Cover_iOS.jpg">
+      <msrp currency="USD">9.99</msrp>
+      <releaseDate>2010-03-09</releaseDate>
+    </release>
+    <release id="rl7" platform="pl1" image="images/games/streetFighter4Cover_PS3.jpg">
+      <msrp currency="USD">29.99</msrp>
+      <releaseDate>2010-03-09</releaseDate>
+    </release>
+    <release id="rl8" platform="pl2" image="images/games/streetFighter4Cover_XBox360.jpg">
+      <msrp currency="USD">29.99</msrp>
+      <releaseDate>2010-03-09</releaseDate>
+    </release>
+  </game>
+
+  <game genres="Action Adventure Hack-and-Slash" publishers="pu2" developers="dv1" homepage="http://www.godofwar.com">
+    <title>God of War III</title>
+    <release id="rl2" platform="pl1" image="images/games/godOfWar3Cover_PS3.jpg">
+      <msrp currency="USD">29.99</msrp>
+      <releaseDate>2010-03-16</releaseDate>
+    </release>
+  </game>
+
+  <game genres="Interactive-Drama Psychological-Thriller" publishers="pu2" developers="dv2">
+    <title>Heavy Rain</title>
+    <release id="rl3" platform="pl1" image="images/games/heavyRainCover_PS3.jpg">
+      <msrp currency="USD">79.99</msrp>
+      <releaseDate>2010-02-23</releaseDate>
+    </release>
+  </game>
+
+  <game genres="Shooter" publishers="pu5" developers="dv5" homepage="http://www.battlefield.com">
+    <title>Battlefield 3</title>
+    <release id="rl4" platform="pl7" image="images/games/battlefield3Cover_PC.jpg">
+      <msrp currency="USD">59.99</msrp>
+      <releaseDate>2011-10-25</releaseDate>
+    </release>
+    <release id="rl5" platform="pl1" image="images/games/battlefield3Cover_PS3.jpg">
+      <msrp currency="USD">59.99</msrp>
+      <releaseDate>2011-10-25</releaseDate>
+    </release>
+    <release id="rl6" platform="pl2" image="images/games/battlefield3Cover_XBox360.jpg">
+      <msrp currency="USD">59.99</msrp>
+      <releaseDate>2011-10-25</releaseDate>
+    </release>
+  </game>
+
+  <game genres="Action RPG" publishers="pu6 pu7" developers="dv6">
+    <title>Call for Heroes: Pompolic Wars</title>
+    <release id="rl9" platform="pl7" image="images/games/callForHeroesCover_PC.jpg">
+      <msrp currency="USD">19.99</msrp>
+      <releaseDate>2007-06-26</releaseDate>
+    </release>
+    <release id="rl10" platform="pl9" image="images/games/callForHeroesCover_Wii.jpg">
+      <msrp currency="USD">19.99</msrp>
+      <releaseDate>2007-06-26</releaseDate>
+    </release>
+  </game>
+
+  <game genres="Action Adventure Open-World" publishers="pu8" developers="dv7" homepage="http://www.prototypegame.com">
+    <title>Prototype 2</title>
+    <release id="rl11" platform="pl7" image="images/games/prototype2Cover_PC.jpg">
+      <msrp currency="USD">49.99</msrp>
+      <releaseDate>2012-07-24</releaseDate>
+    </release>
+    <release id="rl12" platform="pl1" image="images/games/prototype2Cover_PS3.jpg">
+      <msrp currency="USD">59.99</msrp>
+      <releaseDate>2012-04-24</releaseDate>
+    </release>
+    <release id="rl13" platform="pl2" image="images/games/prototype2Cover_XBox360.jpg">
+      <msrp currency="USD">59.99</msrp>
+      <releaseDate>2012-04-24</releaseDate>
+    </release>
+  </game>
+
+  <game genres="Survival Horror" publishers="pu9" developers="dv8" homepage="http://spiritcamera.nintendo.com">
+    <title>Spirit Camera: The Cursed Memoir</title>
+    <release id="rl14" platform="pl11" image="images/games/spiritCameraTCMCover_3DS.jpg">
+      <msrp currency="USD">39.99</msrp>
+      <releaseDate>2012-04-13</releaseDate>
+    </release>
+  </game>
+  
+  <platformsCatalog>
+    <platform id="pl1" class="Console">
+      <manufacturer>Sony</manufacturer>
+      <system>Playstation 3</system>
+    </platform>
+    <platform id="pl2" class="Console">
+      <manufacturer>Microsoft</manufacturer>
+      <system>XBox 360</system>
+    </platform>
+    <platform id="pl3" class="Mobile">
+      <manufacturer>Apple</manufacturer>
+      <system>iOS</system>
+    </platform>
+    <platform id="pl4" class="Mobile">
+      <manufacturer>Google</manufacturer>
+      <system>Android</system>
+    </platform>
+    <platform id="pl5" class="Handheld">
+      <manufacturer>Sony</manufacturer>
+      <system>Playstation Vita</system>
+    </platform>
+    <platform id="pl6" class="Handheld">
+      <manufacturer>Sony</manufacturer>
+      <system>Playstation Portable (PSP)</system>
+    </platform>
+    <platform id="pl7" class="PC">
+      <manufacturer>Microsoft</manufacturer>
+      <system>Windows</system>
+    </platform>
+    <platform id="pl8" class="PC">
+      <manufacturer>Apple</manufacturer>
+      <system>Mac OS</system>
+    </platform>
+    <platform id="pl9" class="Console">
+      <manufacturer>Nintendo</manufacturer>
+      <system>Wii</system>
+    </platform>
+    <platform id="pl10" class="Handheld">
+      <manufacturer>Nintendo</manufacturer>
+      <system>DS</system>
+    </platform>
+    <platform id="pl11" class="Handheld">
+      <manufacturer>Nintendo</manufacturer>
+      <system>3DS</system>
+    </platform>
+  </platformsCatalog>
+
+  <publishersCatalog>
+    <publisher id="pu1" homepage="http://www.capcom.com">Capcom</publisher>
+    <publisher id="pu2" homepage="http://us.playstation.com">Sony Computer Entertainment</publisher>
+    <publisher id="pu3" homepage="http://www.microsoft.com/games">Microsoft Studios</publisher>
+    <publisher id="pu5" homepage="http://www.ea.com">Electronic Arts (EA)</publisher>
+    <publisher id="pu6" homepage="http://www.strategyfirst.com">Strategy First</publisher>
+    <publisher id="pu7" homepage="http://datadesign.uk.com">Data Design Interactive</publisher>
+    <publisher id="pu8" homepage="http://www.activision.com/atvihub/home.do">Activision</publisher>
+    <publisher id="pu9" homepage="http://www.nintendo.com/?country=US&amp;lang=en">Nintendo</publisher>
+  </publishersCatalog>
+
+  <developersCatalog>
+    <developer id="dv1" homepage="http://www.worldwidestudios.net/santamonica">Santa Monica Studios</developer>
+    <developer id="dv2" homepage="http://www.quanticdream.com">Quantic Dream</developer>
+    <developer id="dv3" homepage="http://www.remedygames.com">Remedy Entertainment</developer>
+    <developer id="dv5" homepage="http://www.dice.se">EA Digital Illusions CE (DICE)</developer>
+    <developer id="dv6" homepage="http://www.quotixsoftware.com">Quotix Software</developer>
+    <developer id="dv7" homepage="http://www.radical.ca">Radical Entertainment</developer>
+    <developer id="dv8" homepage="http://www.koeitecmo.co.jp/e/index.html">Tecmo Koei</developer>
+  </developersCatalog>
+
+  <sal:salesCatalog>
+    <sal:sale saleID="sl1" forItem="rl1" link="http://itunes.apple.com/us/app/street-fighter-iv/id354655665?mt=8">
+      <sal:vendorName>iTunes</sal:vendorName>
+      <sal:price currency="USD">4.99</sal:price>
+      <sal:startDate>2012-03-12</sal:startDate>
+      <sal:endDate>2012-04-12</sal:endDate>
+    </sal:sale>
+    <sal:sale saleID="sl2" forItem="rl7" link="http://www.amazon.com/Street-Fighter-IV-GH-Playstation-3/dp/B0012N5MIO">
+      <sal:vendorName>Amazon</sal:vendorName>
+      <sal:price currency="USD">10.99</sal:price>
+    </sal:sale>
+    <sal:sale saleID="sl3" forItem="rl8" link="http://www.amazon.com/Street-Fighter-IV-PH-Xbox-360/dp/B0012N3ZXS/ref=sr_1_1_title_0?s=videogames&amp;ie=UTF8&amp;qid=1335148590&amp;sr=1-1">
+      <sal:vendorName>Amazon</sal:vendorName>
+      <sal:price currency="USD">15.56</sal:price>
+    </sal:sale>
+    <sal:sale saleID="sl4" forItem="rl9" link="http://www.amazon.com/Call-For-Heroes-Pompollic-Wars-Pc/dp/B000P18Y8O/ref=sr_1_2?ie=UTF8&amp;qid=1335208116&amp;sr=8-2">
+      <sal:vendorName>Amazon</sal:vendorName>
+      <sal:price currency="USD">5.43</sal:price>
+    </sal:sale>
+    <sal:sale saleID="sl5" forItem="rl11" link="http://www.amazon.com/Prototype-2-Pc/dp/B004FUGKSW/ref=sr_1_1?s=videogames&amp;ie=UTF8&amp;qid=1335761335&amp;sr=1-1">
+      <sal:vendorName>Amazon</sal:vendorName>
+      <sal:price currency="USD">49.96</sal:price>
+    </sal:sale>
+    <sal:sale saleID="sl6" forItem="rl13" link="http://www.amazon.com/Prototype-2-Xbox-360/dp/B004FUL9YW/ref=sr_1_1?s=videogames&amp;ie=UTF8&amp;qid=1335761396&amp;sr=1-1">
+      <sal:vendorName>Amazon</sal:vendorName>
+      <sal:price currency="USD">52.75</sal:price>
+    </sal:sale>
+    <sal:sale saleID="sl7" forItem="rl12" link="http://www.amazon.com/Prototype-2-Playstation-3/dp/B004FUI84G/ref=sr_1_1?s=videogames&amp;ie=UTF8&amp;qid=1335761455&amp;sr=1-1">
+      <sal:vendorName>Amazon</sal:vendorName>
+      <sal:price currency="USD">55.30</sal:price>
+    </sal:sale>
+    <sal:sale saleID="sl8" forItem="rl2" link="http://www.amazon.com/God-War-III-Playstation-3/dp/B000ZK9QCS/ref=sr_1_1?s=videogames&amp;ie=UTF8&amp;qid=1335805165&amp;sr=1-1">
+      <sal:vendorName>Amazon</sal:vendorName>
+      <sal:price currency="USD">27.24</sal:price>
+    </sal:sale>
+  </sal:salesCatalog>
+
+</gameCatalog>

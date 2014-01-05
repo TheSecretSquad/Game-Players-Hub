@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ______                   ______  _                             _     _       _                         
+ / _____)                 (_____ \| |                           | |   | |     | |                        
+| /  ___  ____ ____   ____ _____) ) | ____ _   _  ____  ____ ___| |__ | |_   _| | _     ____  ___  ____  
+| | (___)/ _  |    \ / _  )  ____/| |/ _  | | | |/ _  )/ ___)___)  __)| | | | | || \   / ___)/ _ \|    \ 
+| \____/( ( | | | | ( (/ /| |     | ( ( | | |_| ( (/ /| |  |___ | |   | | |_| | |_) )_( (___| |_| | | | |
+ \_____/ \_||_|_|_|_|\____)_|     |_|\_||_|\__  |\____)_|  (___/|_|   |_|\____|____/(_)\____)\___/|_|_|_|
+                                          (____/                                                         
+
+File:   GPHCatalog.xml
+Author: Peter DiSalvo
+Date:   April 2012
+
+Purpose:	Schema for a news articles.
+
+-->
+<xs:schema targetNamespace="http://www.gameplayershub.com/newsArticle"
+           elementFormDefault="qualified"
+           xmlns="http://www.gameplayershub.com/newsArticle"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Root element can be a library of news articles -->
+  <xs:element name="library">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="newsArticle" minOccurs="1" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Root element can be a single news article for
+      unaggregated documents -->
+  <xs:element name="newsArticle" type="newsArticle" />
+
+  <!--A news article-->
+  <xs:complexType name="newsArticle">
+    <xs:group ref="newsArticle" minOccurs="1" maxOccurs="1" />
+    <xs:attribute name="id" type="xs:ID" use="required" />
+    <xs:attribute name="photo" type="xs:anyURI" use="required" />
+    <xs:attribute name="featured" type="xs:boolean" default="false" use="optional" />
+  </xs:complexType>
+
+  <xs:group name="newsArticle">
+    <xs:sequence>
+      <xs:element name="title" type="title" />
+      <xs:element name="author" type="xs:string" minOccurs="1" maxOccurs="3" />
+      <xs:element name="date" type="xs:date" />
+      <xs:element name="synopsis" type="synopsis"  />
+      <xs:choice minOccurs="1">
+        <xs:element name="content" type="xs:string" />
+        <xs:element name="externalLink" type="xs:anyURI" />
+        <xs:element name="contentPath" type="xs:anyURI" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+
+  <!--Restrict article titles to 30 characters-->
+  <xs:simpleType name="title">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="60" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--Restrict synopses to 100 characters-->
+  <xs:simpleType name="synopsis">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="630" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

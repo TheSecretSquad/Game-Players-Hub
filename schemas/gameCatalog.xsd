@@ -1,0 +1,221 @@
+﻿<?xml version="1.0"?>
+<!--
+  ______                   ______  _                             _     _       _                         
+ / _____)                 (_____ \| |                           | |   | |     | |                        
+| /  ___  ____ ____   ____ _____) ) | ____ _   _  ____  ____ ___| |__ | |_   _| | _     ____  ___  ____  
+| | (___)/ _  |    \ / _  )  ____/| |/ _  | | | |/ _  )/ ___)___)  __)| | | | | || \   / ___)/ _ \|    \ 
+| \____/( ( | | | | ( (/ /| |     | ( ( | | |_| ( (/ /| |  |___ | |   | | |_| | |_) )_( (___| |_| | | | |
+ \_____/ \_||_|_|_|_|\____)_|     |_|\_||_|\__  |\____)_|  (___/|_|   |_|\____|____/(_)\____)\___/|_|_|_|
+                                          (____/                                                         
+
+File:   GPHCatalog.xml
+Author: Peter DiSalvo
+Date:   April 2012
+
+Purpose:	Schema for a game catalog, which is essentially an inventory.
+			The catalog has catalogs within it, namely a separate catalog for
+			storing data on game publishing companies, game developing companies
+			and gaming platforms. They are all interrelated using ID and IDREF types.
+
+-->
+
+<xs:schema targetNamespace="http://www.gameplayershub.com/gameCatalog"
+           elementFormDefault="qualified"
+           xmlns="http://www.gameplayershub.com/gameCatalog"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:sha="http://www.gameplayershub.com/sharedTypes"
+           xmlns:sal="http://www.gameplayershub.com/sale">
+
+  <xs:import namespace="http://www.gameplayershub.com/sharedTypes" schemaLocation="sharedTypes.xsd" />
+  <xs:import namespace="http://www.gameplayershub.com/sale" schemaLocation="sale.xsd" />
+
+  <!--__TYPE DECLARATIONS FOR: gameCatalog-->
+
+  <!--  A game catalog has a list of game releases
+        that references a list of game titles, platforms,
+        and publishers.
+  -->
+  <xs:element name="gameCatalog" type="gameCatalog" />
+
+  <xs:complexType name="gameCatalog">
+    <xs:sequence>
+      <xs:element name="game" type="game" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="platformsCatalog">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="platform" type="platform" minOccurs="1" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="publishersCatalog">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="publisher" type="studio" minOccurs="1" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="developersCatalog">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="developer" type="studio" minOccurs="1" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element ref="sal:salesCatalog" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <!--__TYPE DECLARATIONS FOR: game-->
+
+  <!--  A game title is produced by a set of publishers
+        and developers.
+        Each game release is released under a title.
+        Each title is unique, and specifying it once
+        prevents duplication and errors in spelling.
+        Game titles can be released by publishers on different
+        platforms at different times.
+  -->
+  <xs:complexType name="game">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string" />
+      <xs:element name="release" type="gameRelease" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="publishers" type="xs:IDREFS" use="optional" />
+    <xs:attribute name="developers" type="xs:IDREFS" use="optional" />
+    <xs:attribute name="genres" use="required">
+      <xs:simpleType>
+        <xs:list itemType="genre" />
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="homepage" type="sha:webLink" use ="optional" />
+  </xs:complexType>
+
+  <!--  A game title has many game is released on various
+        platforms, at various times and sold at different prices
+   -->
+  <xs:complexType name="gameRelease">
+    <xs:sequence>
+      <xs:element name="msrp" type="sha:price" minOccurs="0" maxOccurs="1" />
+      <xs:element name="releaseDate" type="xs:date" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute name="id" type="gameReleaseID" use="required" />
+    <xs:attribute name="platform" type="gameReleaseIDREF" use ="required" />
+    <xs:attribute name="image" type="xs:anyURI" use="required" />
+  </xs:complexType>
+
+  <!-- Game release ID format -->
+  <xs:simpleType name="gameReleaseID">
+    <xs:restriction base="xs:ID">
+      <xs:pattern value="\w*" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Game release IDREF format should contain only word characters-->
+  <xs:simpleType name="gameReleaseIDREF">
+    <xs:restriction base="xs:IDREF">
+      <xs:pattern value="\w*" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- List of game release IDREF -->
+  <xs:simpleType name="gameReleaseIDREFS">
+    <xs:list itemType="gameReleaseIDREF" />
+  </xs:simpleType>
+
+  <xs:simpleType name="genre">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Action" />
+      <xs:enumeration value="Adventure" />
+      <xs:enumeration value="Educational" />
+      <xs:enumeration value="Fighting" />
+      <xs:enumeration value="Hack-and-Slash" />
+      <xs:enumeration value="Horror" />
+      <xs:enumeration value="Interactive-Drama" />
+      <xs:enumeration value="MMO" />
+      <xs:enumeration value="Open-World" />
+      <xs:enumeration value="Puzzle" />
+      <xs:enumeration value="Psychological-Thriller" />
+      <xs:enumeration value="Racing" />
+      <xs:enumeration value="RPG" />
+      <xs:enumeration value="Shooter" />
+      <xs:enumeration value="Science-Fiction" />
+      <xs:enumeration value="Simulation-Construction" />
+      <xs:enumeration value="Simulation-Life" />
+      <xs:enumeration value="Simulation-Vehicle" />
+      <xs:enumeration value="Sports" />
+      <xs:enumeration value="Strategy" />
+      <xs:enumeration value="Survival" />
+    </xs:restriction>
+  </xs:simpleType>
+
+
+  <!--__TYPE DECLARATIONS FOR: platform__-->
+
+  <!--  A gaming platform is made by a manufacturer, has a model,
+        and is of a certain class of devices. If the class is a
+        PC, the manufacturer and model elements can be replaced
+        with an operating system declaration.
+  -->
+  <xs:complexType name="platform">
+    <xs:sequence>
+      <xs:element name="manufacturer" type="xs:string" />
+      <xs:element name="system" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:ID" use="required" />
+    <xs:attribute name="class" type="platformClass" use="required" />
+  </xs:complexType>
+
+  <xs:simpleType name="platformClass">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Console" />
+      <xs:enumeration value="Handheld" />
+      <xs:enumeration value="Mobile" />
+      <xs:enumeration value="PC" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--__TYPE DECLARATIONS FOR: studio__-->
+
+  <!--  Studio type is used for publishing
+        and developer studios.
+  -->
+
+  <xs:complexType name="studio">
+    <xs:simpleContent>
+      <xs:extension base="sha:requiredString">
+        <xs:attribute name="id" type="xs:ID" use="required" />
+        <xs:attribute name="homepage" type="sha:webLink" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <!--__TYPE DECLARATIONS FOR: scores-->
+
+  <!--  Score consists of a criteria and a score value
+        for that criteria
+  -->
+
+  <!--Subscore value is between 0 and 10-->
+  <xs:simpleType name="scoreValue">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0" />
+      <xs:maxInclusive value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="criteria">
+    <xs:restriction base ="xs:string">
+      <xs:enumeration value="Controls" />
+      <xs:enumeration value="Gameplay" />
+      <xs:enumeration value="Graphics" />
+      <xs:enumeration value="Innovation" />
+      <xs:enumeration value="Multiplayer" />
+      <xs:enumeration value="Presentation" />
+      <xs:enumeration value="SinglePlayer" />
+      <xs:enumeration value="Sound" />
+      <xs:enumeration value="Story" />
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

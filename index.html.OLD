@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Players Hub</title>
+    <link rel="stylesheet" type="text/css" href="GPHStyles.css" />
+</head>
+<body>
+    <header>
+        <!-- BEGIN headerContent -->
+        <div id="headerContent">
+            <p id="tagLine">
+                Video game news, reviews and a place to be heard.</p>
+            <nav>
+                <a class="current" href="index.html">Home</a> <a href="games.html">Games</a> <a href="articles.html">
+                    Articles</a> <a href="about.html">About</a>
+            </nav>
+            <!-- BEGIN featured -->
+            <article id="featured">
+                
+                <img src="articles/photos/Battlefield3.jpg"/>
+                <!--<div id="featuredArticleBlock">
+                    <h1>
+                        Battlefield 3 Blah</h1>
+                    <p class="articleMiniText">
+                        by So and So</p>
+                    <p class="articleMiniText">
+                        Date: 12/21/2012</p>
+                    <div class="articleSummary">
+                        <p>
+                            Okay, in many ways not a traditional game, but the graphics and unique gameplay
+                            will astound you. Not the future of gaming, so to speak, but certainly a clever
+                            take on the genre...you'll be thinking and talking about this game for a long time.</p>
+                        <a href="#" class="readMoreLink">Read more &raquo;</a>
+                    </div>
+                </div>-->
+
+                <div id="featuredGameInfoBlock">
+                <div class="titleDetails">
+                    <h1>
+                        Some Game Title Here</h1>
+                    <p class="articleMiniText">
+                        Published by: <a href="#">some company</a>, etc</p>
+                    <p class="articleMiniText">
+                        Developed by: <a href="#">whatever company</a>, etc</p>
+                    <p class="articleMiniText">
+                        Genre:
+                    </p>
+                    <p class="articleMiniText">
+                        Platform:
+                    </p>
+                </div>
+                <div id="featuredGameScoreBlock">
+                    <h1 class="score90_100">
+                        97%</h1>
+                </div>
+                <hr class="gameInfoAuthorDivider" />
+            </div>
+            
+            <div id="featuredArticleBlock">
+                    <h1>
+                        Battlefield 3 Blah</h1>
+                    <p class="articleMiniText">
+                        by So and So</p>
+                    <p class="articleMiniText">
+                        Date: 12/21/2012</p>
+                    <div class="articleSummary">
+                        <p>
+                            Okay, in many ways not a traditional game, but the graphics and unique gameplay
+                            will astound you. Not the future of gaming, so to speak, but certainly a clever
+                            take on the genre...you'll be thinking and talking about this game for a long time.</p>
+                        <a href="#" class="readMoreLink">Read more &raquo;</a>
+                    </div>
+                </div>
+
+            </article>
+            <!-- END featured -->
+        </div>
+        <!-- END headerContent -->
+    </header>
+    <div id="headerBottomDivider">
+    </div>
+    <div id="headerBottomShadow">
+    </div>
+    <section id="articles">
+        <article>
+            <div class="articleBlock">
+                <h1 class="articleTitle">
+                    Some Article About Something</h1>
+                <p class="articleMiniText">
+                    by So and So</p>
+                <p class="articleMiniText">
+                    Date: 12/21/2012</p>
+                <div class="articleSummary">
+                    <img class="articlePhoto" src="images/Battlefield-3-Wallpaper-image.jpg" />
+                    <p>
+                        Okay, in many ways not a traditional game, but the graphics and unique gameplay
+                        will astound you. Not the future of gaming, so to speak, but certainly a clever
+                        take on the genre...you'll be thinking and talking about this game for a long time.</p>
+                    <a href="#" class="readMoreLink">Read more &raquo;</a>
+                </div>
+            </div>
+        </article>
+        <article class="review">
+            <div class="gameInfoBlock">
+                <div class="titleDetails">
+                    <h1 class="gameTitle">
+                        Some Game Title Here</h1>
+                    <p class="articleMiniText">
+                        Published by: <a href="#">some company</a>, etc</p>
+                    <p class="articleMiniText">
+                        Developed by: <a href="#">whatever company</a>, etc</p>
+                    <p class="articleMiniText">
+                        Genre:
+                    </p>
+                    <p class="articleMiniText">
+                        Platform:
+                    </p>
+                </div>
+                <div class="scoreBlock">
+                    <h1 class="score90_100">
+                        97%</h1>
+                    <table>
+                        <tr>
+                            <th>
+                                Criteria
+                            </th>
+                            <td>
+                                xx%
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <hr class="gameInfoAuthorDivider" />
+            <div class="articleBlock">
+                <h2>
+                    Some subtitle</h2>
+                <p class="articleMiniText">
+                    by So and So</p>
+                <p class="articleMiniText">
+                    Date: 12/21/2012</p>
+                <div class="articleSummary">
+                    <img class="articlePhoto" src="images/Battlefield-3-Wallpaper-image.jpg" />
+                    <p>
+                        Okay, in many ways not a traditional game, but the graphics and unique gameplay
+                        will astound you. Not the future of gaming, so to speak, but certainly a clever
+                        take on the genre...you'll be thinking and talking about this game for a long time.</p>
+                    <a href="#" class="readMoreLink">Read more &raquo;</a>
+                </div>
+            </div>
+        </article>
+    </section>
+</body>
+</html>

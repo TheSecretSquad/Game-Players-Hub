@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ______                   ______  _                             _     _       _                         
+ / _____)                 (_____ \| |                           | |   | |     | |                        
+| /  ___  ____ ____   ____ _____) ) | ____ _   _  ____  ____ ___| |__ | |_   _| | _     ____  ___  ____  
+| | (___)/ _  |    \ / _  )  ____/| |/ _  | | | |/ _  )/ ___)___)  __)| | | | | || \   / ___)/ _ \|    \ 
+| \____/( ( | | | | ( (/ /| |     | ( ( | | |_| ( (/ /| |  |___ | |   | | |_| | |_) )_( (___| |_| | | | |
+ \_____/ \_||_|_|_|_|\____)_|     |_|\_||_|\__  |\____)_|  (___/|_|   |_|\____|____/(_)\____)\___/|_|_|_|
+                                          (____/                                                         
+
+File:   GPHCatalog.xml
+Author: Peter DiSalvo
+Date:   April 2012
+
+Purpose:	Schema for news and reviews about video games.
+			The schema's root element takes one of two forms which
+			is decided upon by the developer of the instance document.
+			
+			Using the root <PublicationsExtCatalog> defines an instance document
+			that links to an external Game Catalog file, and uses inter-document
+			cross references. An external catalog can be shared by developers.
+			
+			Using the root <PublicationsIntCatalog> defines an instance document
+			that contains an internal Game Catalog.
+
+-->
+<xs:schema targetNamespace="http://www.gameplayershub.com/gameNews"
+           elementFormDefault="qualified"
+           xmlns="http://www.gameplayershub.com/gameNews"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:na="http://www.gameplayershub.com/newsArticle"
+           xmlns:vgc="http://www.gameplayershub.com/gameCatalog">
+
+  <xs:import namespace="http://www.gameplayershub.com/newsArticle" schemaLocation="newsArticle.xsd" />
+  <xs:import namespace="http://www.gameplayershub.com/gameCatalog" schemaLocation="gameCatalog.xsd" />
+
+  <!-- Publications using an external catalog -->
+  <xs:element name="publicationsExtCatalog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="externalGameCatalogURL" type="xs:anyURI" />
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="na:newsArticle" />
+          <xs:element name="review" type="externalCatalogReview" />
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Publications using an internal catalog -->
+  <xs:element name="publicationsIntCatalog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="na:newsArticle" />
+          <xs:element name="review" type="internalCatalogReview" />
+        </xs:choice>
+        <xs:element name="gameCatalog" type="vgc:gameCatalog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+
+  <!-- Review type for internal catalog must reference an ID -->
+  <xs:complexType name="internalCatalogReview">
+    <xs:complexContent>
+      <xs:extension base="na:newsArticle">
+        <xs:sequence>
+          <xs:element name="scores" type="scores" />
+        </xs:sequence>
+        <xs:attribute name="forItems" type="vgc:gameReleaseIDREFS" use="required" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <!-- Review type for external catalog does not need to reference an ID -->
+  <xs:complexType name="externalCatalogReview">
+    <xs:complexContent>
+      <xs:extension base="na:newsArticle">
+        <xs:sequence>
+          <xs:element name="scores" type="scores" />
+        </xs:sequence>
+        <xs:attribute name="forItems" type="forItemString" use="required" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <!-- Restricts forItem attribute for game news document
+       with external catalog, because they cannot be IDREFs-->
+  <xs:simpleType name="forItemString">
+    <xs:list itemType="xs:token">
+    </xs:list>
+  </xs:simpleType>
+
+  <xs:complexType name="scores">
+    <xs:sequence minOccurs="3" maxOccurs="7">
+      <xs:element name="score">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="criteria" type="vgc:criteria" />
+            <xs:element name="value" type="vgc:scoreValue" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

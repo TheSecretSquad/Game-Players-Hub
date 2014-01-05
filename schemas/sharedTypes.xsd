@@ -1,0 +1,76 @@
+﻿<?xml version="1.0"?>
+<!--
+  ______                   ______  _                             _     _       _                         
+ / _____)                 (_____ \| |                           | |   | |     | |                        
+| /  ___  ____ ____   ____ _____) ) | ____ _   _  ____  ____ ___| |__ | |_   _| | _     ____  ___  ____  
+| | (___)/ _  |    \ / _  )  ____/| |/ _  | | | |/ _  )/ ___)___)  __)| | | | | || \   / ___)/ _ \|    \ 
+| \____/( ( | | | | ( (/ /| |     | ( ( | | |_| ( (/ /| |  |___ | |   | | |_| | |_) )_( (___| |_| | | | |
+ \_____/ \_||_|_|_|_|\____)_|     |_|\_||_|\__  |\____)_|  (___/|_|   |_|\____|____/(_)\____)\___/|_|_|_|
+                                          (____/                                                         
+
+File:   SharedTypes.xsd
+Author: Peter DiSalvo
+Date:   April 2012
+
+Purpose:  	Shared data types to be used among other schema files.
+
+-->
+<xs:schema targetNamespace="http://www.gameplayershub.com/sharedTypes"
+           elementFormDefault="qualified"
+           xmlns="http://www.gameplayershub.com/sharedTypes"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="price">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="currency" type="currency" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <!--  A currency notation must at least be
+        an uppercase string of three characters.
+        See ISO 4217 (Codes for the Representation of Currencies and Funds). 
+  -->
+  <xs:simpleType name="currencyBase" >
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z]{3}" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Currency enumeration for common currencies -->
+  <xs:simpleType name="commonCurrencies">
+    <xs:restriction base="currencyBase">
+      <xs:enumeration value="USD" />
+      <xs:enumeration value="GBP" />
+      <xs:enumeration value ="EUR" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--  Union type declaring that a currency
+        can be one of the enumerated common currencies
+        or a user can enter their own three character
+        currency.
+  -->
+  <xs:simpleType name="currency">
+    <xs:union memberTypes="currencyBase commonCurrencies" />
+  </xs:simpleType>
+
+  <!--  Type used for hypertext links -->
+  <xs:simpleType name="webLink">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="http://\S*\.[a-z]{2,3}(/\S*)*" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--  Declares a minimum length for a string.
+        Can be used to state that an element's content
+        is required.
+  -->
+  <xs:simpleType name="requiredString">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

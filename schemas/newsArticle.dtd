@@ -1,0 +1,36 @@
+<!--
+  ______                   ______  _                             _     _       _                         
+ / _____)                 (_____ \| |                           | |   | |     | |                        
+| /  ___  ____ ____   ____ _____) ) | ____ _   _  ____  ____ ___| |__ | |_   _| | _     ____  ___  ____  
+| | (___)/ _  |    \ / _  )  ____/| |/ _  | | | |/ _  )/ ___)___)  __)| | | | | || \   / ___)/ _ \|    \ 
+| \____/( ( | | | | ( (/ /| |     | ( ( | | |_| ( (/ /| |  |___ | |   | | |_| | |_) )_( (___| |_| | | | |
+ \_____/ \_||_|_|_|_|\____)_|     |_|\_||_|\__  |\____)_|  (___/|_|   |_|\____|____/(_)\____)\___/|_|_|_|
+                                          (____/                                                         
+
+File:   newsArticle.dtd
+Author: Peter DiSalvo
+Date:   April 2012
+
+Purpose:	DTD for news articles matches the newsArticles schema. Not actually used, because schema is more
+          robust, and there is no need to integrate with legacy data.
+-->
+
+<!ELEMENT library (newsArticle+)>
+
+<!ELEMENT newsArticle (title, author, (author, author?)?, date, synopsis, (content | externalLink | contentPath))>
+
+<!ATTLIST newsArticle id ID #REQUIRED>
+<!ATTLIST newsArticle photo ENTITY #REQUIRED>
+<!ATTLIST newsArticle featured (1 | 0 | true | false) #IMPLIED>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT synopsis (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+<!ELEMENT externalLink (#PCDATA)>
+<!ELEMENT contentPath (#PCDATA)>
+
+<!NOTATION jpeg SYSTEM "image/jpeg">
+<!NOTATION png SYSTEM "image/png">
+<!NOTATION gif SYSTEM "image/gif">
